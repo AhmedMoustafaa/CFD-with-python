@@ -50,7 +50,6 @@ def conv_diff(n, h, epsilon, boundary, u):
             data = np.outer(np.ones(10), frame)
             plt.imshow(data, cmap="Reds", alpha=0.8)
             writer.grab_frame()
-            plt.pause(0.001)
     return t_new
 
 
