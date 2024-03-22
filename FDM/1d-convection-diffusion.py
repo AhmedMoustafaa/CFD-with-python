@@ -35,22 +35,35 @@ def conv_diff(n, h, epsilon, boundary, u):
         else:
             t1 = t_new.copy()
             y = y + 1
-            if y%500==0:
+            if y%500 == 0:
                 frames2 = np.append(frames1, [t_new], axis=0)
                 frames1 = frames2.copy()
 
     fig, ax = plt.subplots()
     plt.title("Heat transfer along the x direction of the rod")
     plt.yticks([])
-    plt.xticks([0,-1],['T=0 K','1 K'])
-    def animate(i):
-        data = np.outer(np.ones(15), frames1[i])
-        image = ax.imshow(data, cmap="Reds", alpha=0.8)  # Update image data
+    plt.xticks([0, n-1], ['T=0 K', '1 K'])
+
+    def animate(i_new):
+        data = np.outer(np.ones(15), frames1[i_new])
+        ax.imshow(data, cmap="Reds", alpha=0.8)  # Update image data
 
     anim = FuncAnimation(fig, animate, frames=len(frames1), interval=50)
-    anim.save("animation.gif", fps=100,dpi=200)  # Adjust fps as needed
+    anim.save("animation.gif", fps=100, dpi=200)  # Adjust fps as needed
+    fig2 = plt.figure()
+    x = np.arange(n)*h
+    def animate2(i_new):
+        plt.clf()
+        plt.plot(x, frames1[i_new])
+        plt.xlabel("x position")
+        plt.ylabel("temperature")
+        plt.title(f"Solution at the iteration number: {i_new}")
+
+    anim2 = FuncAnimation(fig2, animate2, frames=len(frames1), interval=50)
+    anim2.save("animation2.gif", dpi=200)
+
     return t_new
 
 
 # example
-t2 = conv_diff(200, 1 / 200, 1e-6, np.array([0.0, 1.0]), 2)
+t2 = conv_diff(200, 1 / 200, 1e-6, np.array([0.0, 1.0]), 0)
