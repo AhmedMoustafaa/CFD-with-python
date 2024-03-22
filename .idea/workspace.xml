@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04e076fd-10f6-47b3-9671-98fea82d068c" name="Changes" comment="added visualizations">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FDM/1d-convection-diffusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/FDM/1d-convection-diffusion.py" afterDir="false" />
-    </list>
+    <list default="true" id="04e076fd-10f6-47b3-9671-98fea82d068c" name="Changes" comment="added visualizations" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,7 +238,7 @@
       <workItem from="1710988148465" duration="13327000" />
       <workItem from="1711009333129" duration="3325000" />
       <workItem from="1711049513591" duration="1293000" />
-      <workItem from="1711074248458" duration="13913000" />
+      <workItem from="1711074248458" duration="14215000" />
     </task>
     <task id="LOCAL-00001" summary="Added a module for calculating 1d convection-diffusion differential equations.">
       <option name="closed" value="true" />
@@ -299,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711084953344</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added visualizations">
+      <option name="closed" value="true" />
+      <created>1711144157303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711144157303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
