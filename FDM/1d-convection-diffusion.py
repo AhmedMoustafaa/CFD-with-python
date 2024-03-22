@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.animation import PillowWriter
-import imageio
+from matplotlib.animation import FuncAnimation
 
 np.set_printoptions(precision=5)
 
@@ -24,12 +23,7 @@ def conv_diff(n, h, epsilon, boundary, u):
     print(t1)
     t_new = t1.copy()
     y = 1
-    fig = plt.figure()
-    plt.title("Temperature gradient along the x direction")
-    writer = PillowWriter(fps=5000)
     frames1 = np.array([t_new])
-    plt.title("Temperature gradient along the x direction")
-    plt.yticks([])
     while True:
         for i in range(len(t1) - 2):
             t_new[i + 1] = t1[i + 2] * (u * h / 4 + 0.5) + t1[i] * (0.5 - u * h / 4)
@@ -45,13 +39,18 @@ def conv_diff(n, h, epsilon, boundary, u):
                 frames2 = np.append(frames1, [t_new], axis=0)
                 frames1 = frames2.copy()
 
-    with writer.saving(fig, "animation.gif", 200):
-        for frame in frames1:
-            data = np.outer(np.ones(10), frame)
-            plt.imshow(data, cmap="Reds", alpha=0.8)
-            writer.grab_frame()
+    fig, ax = plt.subplots()
+    plt.title("Heat transfer along the x direction of the rod")
+    plt.yticks([])
+    plt.xticks([0,-1],['T=0 K','1 K'])
+    def animate(i):
+        data = np.outer(np.ones(15), frames1[i])
+        image = ax.imshow(data, cmap="Reds", alpha=0.8)  # Update image data
+
+    anim = FuncAnimation(fig, animate, frames=len(frames1), interval=50)
+    anim.save("animation.gif", fps=100,dpi=200)  # Adjust fps as needed
     return t_new
 
 
 # example
-t2 = conv_diff(200, 1 / 200, 1e-6, np.array([0.0, 1.0]), 0)
+t2 = conv_diff(200, 1 / 200, 1e-6, np.array([0.0, 1.0]), 2)
