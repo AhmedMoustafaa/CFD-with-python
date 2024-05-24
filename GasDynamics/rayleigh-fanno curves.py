@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 gamma = 1.4
 cp = 1.0055
-M1 = 0.8  #reference mach number
+M1 = 3  #reference mach number
 
 #reyleigh
 M2 = np.linspace(0.000000001,5,100)
