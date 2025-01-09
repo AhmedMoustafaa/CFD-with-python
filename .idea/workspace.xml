@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04e076fd-10f6-47b3-9671-98fea82d068c" name="Changes" comment="adding gas dynamic module">
-      <change afterPath="$PROJECT_DIR$/FDM/drawing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GasDynamics/plotting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GasDynamics/script.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GasDynamics/sonic location.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GasDynamics/with shock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FDM/1D/drawing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FDM/2D/lid_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FDM/2D/lid_driven_cavity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FDM/1d-convection-diffusion.py" beforeDir="false" afterPath="$PROJECT_DIR$/FDM/1D/1d-convection-diffusion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FDM/animation.gif" beforeDir="false" afterPath="$PROJECT_DIR$/FDM/1D/animation.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FDM/animation2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/FDM/1D/animation2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FDM/drawing.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GasDynamics/fanno-line.png" beforeDir="false" afterPath="$PROJECT_DIR$/GasDynamics/fanno-line.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GasDynamics/m-s.png" beforeDir="false" afterPath="$PROJECT_DIR$/GasDynamics/m-s.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GasDynamics/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GasDynamics/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GasDynamics/rayleigh-fanno curves.py" beforeDir="false" afterPath="$PROJECT_DIR$/GasDynamics/rayleigh-fanno curves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GasDynamics/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/GasDynamics/script.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +38,12 @@
     &quot;assignee&quot;: &quot;AhmedMoustafaa&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="9a8d1d49-be6f-4b61-9625-4a8f2c8ff810" />
-        <option name="url" value="https://github.com/AhmedMoustafaa/CFD-with-python.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AhmedMoustafaa/CFD-with-python.git&quot;,
+    &quot;accountId&quot;: &quot;12bf6aee-f2f5-48ef-844b-d666f829baeb&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -61,46 +59,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.1d-convection-diffusion (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1d-convection-diffusion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.CFD with python.executor&quot;: &quot;Run&quot;,
-    &quot;Python.drawing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.plotting.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rayleigh-fanno curves.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.script.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sonic location.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.with shock.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Aerodynamics/optimization/MACH-Aero/tutorial/airfoilopt&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.1d-convection-diffusion (1).executor": "Run",
+    "Python.1d-convection-diffusion.executor": "Run",
+    "Python.CFD with python.executor": "Run",
+    "Python.drawing.executor": "Run",
+    "Python.lid-driven cavity.executor": "Run",
+    "Python.lid_2.executor": "Run",
+    "Python.lid_driven_cavity (1).executor": "Run",
+    "Python.lid_driven_cavity.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.plotting.executor": "Run",
+    "Python.rayleigh-fanno curves.executor": "Run",
+    "Python.scratch_5.executor": "Run",
+    "Python.scratch_6.executor": "Run",
+    "Python.script.executor": "Run",
+    "Python.sonic location.executor": "Run",
+    "Python.test (1).executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.with shock.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/ahmed/PycharmProjects/CFD with python",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Python&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\PycharmProjects\CFD with python\FDM\1D" />
       <recent name="C:\Users\ahmed\PycharmProjects\CFD with python\FDM" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.drawing">
+  <component name="RunManager" selected="Python.lid_2">
+    <configuration name="1d-convection-diffusion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CFD with python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FDM/1D" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FDM/1D/1d-convection-diffusion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="CFD with python" type="PythonConfigurationType" factoryName="Python">
       <module name="CFD with python" />
       <option name="ENV_FILES" value="" />
@@ -115,7 +138,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\ahmed\PycharmProjects\CFD with python\FDM\1d-convection-diffusion.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\ahmed\PycharmProjects\CFD with python\FDM\1D\1d-convection-diffusion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,21 +170,18 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="drawing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lid_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CFD with python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FDM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FDM/2D" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FDM/drawing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FDM/2D/lid_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,21 +190,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plotting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lid_driven_cavity (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CFD with python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GasDynamics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FDM/2D" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GasDynamics/plotting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FDM/2D/lid_driven_cavity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lid_driven_cavity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CFD with python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FDM/2D" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\ahmed\PycharmProjects\CFD with python\FDM\2D\lid_driven_cavity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,66 +253,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sonic location" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CFD with python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GasDynamics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GasDynamics/sonic location.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="with shock" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CFD with python" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GasDynamics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GasDynamics/with shock.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.drawing" />
-        <item itemvalue="Python.sonic location" />
+        <item itemvalue="Python.lid_2" />
+        <item itemvalue="Python.lid_driven_cavity (1)" />
+        <item itemvalue="Python.1d-convection-diffusion" />
+        <item itemvalue="Python.lid_driven_cavity" />
         <item itemvalue="Python.script" />
-        <item itemvalue="Python.with shock" />
-        <item itemvalue="Python.plotting" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17890.14" />
+        <option value="bundled-python-sdk-5b207ade9991-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17890.14" />
       </set>
     </attachedChunks>
   </component>
@@ -304,6 +296,14 @@
       <workItem from="1716152714646" duration="598000" />
       <workItem from="1716560306643" duration="267000" />
       <workItem from="1716560612334" duration="1645000" />
+      <workItem from="1716562290012" duration="281000" />
+      <workItem from="1716856322011" duration="43000" />
+      <workItem from="1719574409507" duration="1024000" />
+      <workItem from="1719905086495" duration="2470000" />
+      <workItem from="1728908729631" duration="1919000" />
+      <workItem from="1729017616252" duration="7000" />
+      <workItem from="1729027394292" duration="60000" />
+      <workItem from="1736462140224" duration="2292000" />
     </task>
     <task id="LOCAL-00001" summary="Added a module for calculating 1d convection-diffusion differential equations.">
       <option name="closed" value="true" />
@@ -401,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714277773945</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding gas dynamic module">
+      <option name="closed" value="true" />
+      <created>1716562364109</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716562364109</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

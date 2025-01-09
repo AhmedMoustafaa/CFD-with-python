@@ -193,9 +193,7 @@ plt.plot(X, -1 * D, color='blue')
 plt.grid(True)
 plt.title("Diameter")
 figg.savefig('diameter',dpi=500)
-
-
-
+plt.show()
 
 
 
